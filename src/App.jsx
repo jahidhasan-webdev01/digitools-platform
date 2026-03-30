@@ -1,16 +1,33 @@
+import { useState } from 'react';
 import './App.css';
 import Banner from './components/Banner/Banner';
 import Navbar from './components/Navbar/Navbar';
 import Stats from './components/Stats/Stats';
 import Tools from './components/Tools/Tools';
 
+const getToolsData = async () => {
+  const response = await fetch("/tools.json");
+  return response.json();
+}
+
+const toolsPromise = getToolsData();
+
+
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (selectedData) => {
+    setCart([...cart, selectedData])
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar cart={cart} />
       <Banner />
       <Stats />
-      <Tools />
+      <div className='bg-base-200'>
+        <Tools toolsPromise={toolsPromise} cart={cart} addToCart={addToCart} />
+      </div>
     </>
   )
 }

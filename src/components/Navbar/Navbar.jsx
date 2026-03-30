@@ -1,6 +1,6 @@
-import cartIcon from "../../assets/products/shopping-cart.png";
+import { BsCartPlus, BsCartX } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
     return (
         <div className="shadow-sm border-b border-purple-100">
             <div className="navbar w-full md:w-10/12 mx-auto">
@@ -34,10 +34,17 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end space-x-4 font-semibold text-sm">
                     <div className="relative">
-                        <img className="cursor-pointer" src={cartIcon} alt="Cart" />
-                        <span className="absolute -top-4 -right-3 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
-                            8
-                        </span>
+                        {
+                            cart.length > 0 ?
+                                <>
+                                    <BsCartPlus className="cursor-pointer text-xl" />
+                                    <span className="absolute -top-4 -right-3 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                                        {cart.length}
+                                    </span>
+                                </>
+                                :
+                                <BsCartX className="cursor-pointer text-xl" />
+                        }
                     </div>
                     <a className="cursor-pointer pl-2">Login</a>
                     <a className="btn text-sm bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-full">Get Started</a>
