@@ -6,6 +6,7 @@ import Stats from './components/Stats/Stats';
 import Tools from './components/Tools/Tools';
 import { toast } from 'react-toastify';
 import Steps from './components/Steps/Steps';
+import Pricing from './components/Pricing/Pricing';
 
 const getToolsData = async () => {
   const response = await fetch("/tools.json");
@@ -39,8 +40,8 @@ function App() {
       <Navbar cart={cart} />
       <Banner />
       <Stats />
-      <div className='bg-base-200'>
 
+      <div className='bg-base-200'>
         <Tools
           toolsPromise={toolsPromise}
           cart={cart}
@@ -51,6 +52,8 @@ function App() {
 
         <Steps />
       </div>
+
+      <Pricing />
     </>
   )
 }
