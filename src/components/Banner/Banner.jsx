@@ -40,7 +40,6 @@ const Banner = () => {
                     className="w-full max-w-[500px] h-auto object-contain"
                 />
             </div>
-
         </div>
     );
 };
