@@ -2,13 +2,15 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import Navbar from './components/Navbar/Navbar';
 import Stats from './components/Stats/Stats';
+import Tools from './components/Tools/Tools';
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Banner></Banner>
-      <Stats></Stats>
+      <Navbar />
+      <Banner />
+      <Stats />
+      <Tools />
     </>
   )
 }
