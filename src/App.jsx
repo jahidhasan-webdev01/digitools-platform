@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner';
 import Navbar from './components/Navbar/Navbar';
 import Stats from './components/Stats/Stats';
 import Tools from './components/Tools/Tools';
+import { toast } from 'react-toastify';
 
 const getToolsData = async () => {
   const response = await fetch("/tools.json");
@@ -17,7 +18,8 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (selectedData) => {
-    setCart([...cart, selectedData])
+    setCart([...cart, selectedData]);
+    toast.success("Item added to cart");
   }
 
   return (

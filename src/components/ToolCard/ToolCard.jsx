@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { CgCheck } from "react-icons/cg";
 
-const ToolCard = ({ tool, addToCart }) => {
-    const [isAddedToCart, setIsAddedToCart] = useState(false);
-
+const ToolCard = ({ tool, cart, addToCart }) => {
     const defineColorOfTag = (tag) => {
         if (tag === "Popular") {
             return "bg-purple-200 text-purple-900"
@@ -20,8 +17,13 @@ const ToolCard = ({ tool, addToCart }) => {
 
     const handleBuyNow = () => {
         addToCart(tool);
-        setIsAddedToCart(true);
     }
+
+    const isAlreadyInCart = (toolId) => {
+        const result = cart.find((tool) => tool.id === toolId);
+        return !!result;
+    }
+
     return (
         <div className="border-2 border-gray-200 rounded-2xl p-5 bg-white transform transition-transform duration-200 hover:-translate-y-1">
             <p className={`float-right ${defineColorOfTag(tool.tag)} px-3 py-1 text-xs font-semibold rounded-full`}>{tool.tag}</p>
@@ -52,7 +54,7 @@ const ToolCard = ({ tool, addToCart }) => {
                 </div>
 
                 {
-                    isAddedToCart ?
+                    isAlreadyInCart(tool.id) ?
                         <button
                             className="mt-5 btn bg-linear-to-r from-green-500 to-green-700 text-white font-bold rounded-full w-full"
                         >
