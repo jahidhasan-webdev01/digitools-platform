@@ -13,7 +13,6 @@ const getToolsData = async () => {
 
 const toolsPromise = getToolsData();
 
-
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -22,13 +21,31 @@ function App() {
     toast.success("Item added to cart");
   }
 
+  const removeFromCart = (id) => {
+    const result = cart.filter((item) => item.id !== id);
+
+    setCart(result);
+  }
+
+  const handleProceedToCheckout = () => {
+    setCart([]);
+  }
+
   return (
     <>
       <Navbar cart={cart} />
       <Banner />
       <Stats />
       <div className='bg-base-200'>
-        <Tools toolsPromise={toolsPromise} cart={cart} addToCart={addToCart} />
+
+        <Tools
+          toolsPromise={toolsPromise}
+          cart={cart}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
+          handleProceedToCheckout={handleProceedToCheckout}
+        />
+
       </div>
     </>
   )

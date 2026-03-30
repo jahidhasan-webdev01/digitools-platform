@@ -4,7 +4,7 @@ import { BsCartX } from "react-icons/bs";
 import ToolCard from "../ToolCard/ToolCard";
 import CartItem from "../CartItem/CartItem";
 
-const Tools = ({ toolsPromise, cart, addToCart }) => {
+const Tools = ({ toolsPromise, cart, addToCart, removeFromCart, handleProceedToCheckout }) => {
     const toolsData = use(toolsPromise);
     const [isCartSelected, setIsCartSelected] = useState(false);
 
@@ -56,7 +56,12 @@ const Tools = ({ toolsPromise, cart, addToCart }) => {
                             cart.length > 0 ?
                                 <>
                                     {
-                                        cart.map((item, index) => <CartItem key={index} item={item} />)
+                                        cart.map((item, index) =>
+                                            <CartItem
+                                                key={index}
+                                                item={item}
+                                                removeFromCart={removeFromCart}
+                                            />)
                                     }
 
                                     <div className="w-full flex justify-between my-5">
@@ -64,7 +69,11 @@ const Tools = ({ toolsPromise, cart, addToCart }) => {
                                         <h1 className="font-bold text-xl">${total}</h1>
                                     </div>
 
-                                    <button className="btn text-white rounded-full w-full bg-linear-to-r from-[#4f39f6] to-[#9514fa]">Proceed to Checkout</button>
+                                    <button
+                                        onClick={() => handleProceedToCheckout()}
+                                        className="btn text-white rounded-full w-full bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
+                                        Proceed to Checkout
+                                    </button>
                                 </>
                                 :
                                 <div className="text-gray-500 h-[30vh] flex flex-col space-y-2 justify-center items-center">
