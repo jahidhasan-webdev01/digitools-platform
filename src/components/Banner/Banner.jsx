@@ -7,7 +7,7 @@ const Banner = () => {
         <div className='w-full lg:w-10/12 mx-auto py-5 lg:py-20 px-5 flex gap-10 flex-col-reverse lg:flex-row items-center'>
 
             <div className='space-y-5 w-full lg:w-1/2'>
-                <div className='inline-flex items-center gap-2 bg-purple-100 rounded-full px-3 py-1 font-medium text-purple-500 w-max'>
+                <div className='inline-flex items-center gap-2 bg-purple-100 rounded-full px-3 py-1 font-medium text-purple-500 w-max border border-purple-200'>
                     <img className='w-5 h-5 animate-pulse' src={highlightsImage} alt="highlights" />
                     <span className='bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent'>
                         New: AI-Powered Tools Available

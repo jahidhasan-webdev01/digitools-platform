@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Stats from './components/Stats/Stats';
 import Tools from './components/Tools/Tools';
 import { toast } from 'react-toastify';
+import Steps from './components/Steps/Steps';
 
 const getToolsData = async () => {
   const response = await fetch("/tools.json");
@@ -23,11 +24,13 @@ function App() {
 
   const removeFromCart = (id) => {
     const result = cart.filter((item) => item.id !== id);
+    toast.warning("Item removed from cart");
 
     setCart(result);
   }
 
   const handleProceedToCheckout = () => {
+    toast("You are proceed to checkout");
     setCart([]);
   }
 
@@ -46,6 +49,7 @@ function App() {
           handleProceedToCheckout={handleProceedToCheckout}
         />
 
+        <Steps />
       </div>
     </>
   )
