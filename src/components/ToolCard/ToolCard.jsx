@@ -25,7 +25,7 @@ const ToolCard = ({ tool, cart, addToCart }) => {
     }
 
     return (
-        <div className="border-2 border-gray-200 rounded-2xl p-5 bg-white hover:bg-purple-50 transform transition-transform duration-200 hover:-translate-y-1">
+        <div className="border-2 border-gray-200 rounded-2xl p-5 bg-white hover:bg-purple-50 transform transition-transform duration-200 hover:-translate-y-1 shadow-2xl">
             <p className={`float-right ${defineColorOfTag(tool.tag)} px-3 py-1 text-xs font-semibold rounded-full`}>{tool.tag}</p>
             <div className="mt-2 w-12 h-12 rounded-full overflow-hidden border border-gray-200 p-2">
                 <img

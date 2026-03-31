@@ -11,13 +11,13 @@ const Pricing = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
 
-                <div className="border border-gray-200 rounded-xl p-5 flex flex-col">
+                <div className="border border-gray-200 rounded-xl p-5 flex flex-col shadow-2xl">
                     <div className="flex-1">
-                        <h1 className="text-2xl font-bold">Started</h1>
+                        <h1 className="text-2xl font-bold">Starter</h1>
                         <p>Perfect for getting started</p>
 
-                        <h1 className="my-5 font-bold text-2xl">
-                            $0 <span className="text-base text-gray-500 font-normal">/Month</span>
+                        <h1 className="my-5 font-bold text-4xl">
+                            $0<span className="text-base text-gray-500 font-normal">/Month</span>
                         </h1>
 
                         <div>
@@ -48,14 +48,14 @@ const Pricing = () => {
 
                 </div>
 
-                <div className="relative border border-gray-200 rounded-xl p-5 flex flex-col bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
+                <div className="mt-5 md:mt-0 relative border border-gray-200 rounded-xl p-5 flex flex-col bg-linear-to-r from-[#4f39f6] to-[#9514fa] shadow-2xl">
                     <div className="flex-1">
                         <p className="absolute bg-amber-300 px-4 py-1 rounded-full -top-4 left-1/2 -translate-x-1/2 font-bold text-sm">Most Popular</p>
                         <h1 className="text-2xl font-bold text-white">Pro</h1>
                         <p className="text-gray-200">Best for professionals</p>
 
-                        <h1 className="my-5 font-bold text-2xl text-white">
-                            $29 <span className="text-base text-gray-200 font-normal">/Month</span>
+                        <h1 className="my-5 font-bold text-4xl text-white">
+                            $29<span className="text-base text-gray-200 font-normal">/Month</span>
                         </h1>
 
                         <div className="text-gray-200">
@@ -94,14 +94,14 @@ const Pricing = () => {
 
                 </div>
 
-                <div className="border border-gray-200 rounded-xl p-5 flex flex-col">
+                <div className="border border-gray-200 rounded-xl p-5 flex flex-col shadow-2xl">
 
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold">Enterprise</h1>
                         <p>For teams and businesses</p>
 
-                        <h1 className="my-5 font-bold text-2xl">
-                            $99 <span className="text-base text-gray-500 font-normal">/Month</span>
+                        <h1 className="my-5 font-bold text-4xl">
+                            $99<span className="text-base text-gray-500 font-normal">/Month</span>
                         </h1>
 
                         <div>

@@ -32,7 +32,7 @@ const Navbar = ({ cart }) => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end space-x-4 font-semibold text-sm">
+                <div className="navbar-end space-x-2 md:space-x-4 font-semibold text-sm">
                     <div className="relative">
                         {
                             cart.length > 0 ?
@@ -46,7 +46,7 @@ const Navbar = ({ cart }) => {
                                 <BsCartX className="cursor-pointer text-xl" />
                         }
                     </div>
-                    <a className="cursor-pointer pl-2">Login</a>
+                    <a className="cursor-pointer md:pl-2">Login</a>
                     <a className="btn text-sm bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-full">Get Started</a>
                 </div>
             </div>
