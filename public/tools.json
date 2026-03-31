@@ -133,20 +133,5 @@
             "Analytics reports"
         ],
         "icon": "/products/gmail.png"
-    },
-    {
-        "id": 10,
-        "name": "Landing Page Builder",
-        "description": "Build high-converting landing pages quickly using drag-and-drop tools.",
-        "price": 45,
-        "period": "one-time",
-        "tag": "Best Seller",
-        "tagType": "best-seller",
-        "features": [
-            "Drag & drop builder",
-            "Responsive templates",
-            "Conversion analytics"
-        ],
-        "icon": "/products/world-wide-web.png"
     }
 ]

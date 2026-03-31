@@ -13,7 +13,7 @@ const Steps = () => {
 
             <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5">
+                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5 shadow-2xl">
                     <div className="flex justify-end">
                         <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">01</span>
                     </div>
@@ -26,7 +26,7 @@ const Steps = () => {
                     </div>
                 </div>
 
-                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5">
+                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5 shadow-2xl">
                     <div className="flex justify-end">
                         <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">01</span>
                     </div>
@@ -39,7 +39,7 @@ const Steps = () => {
                     </div>
                 </div>
 
-                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5">
+                <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5 shadow-2xl">
                     <div className="flex justify-end">
                         <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">01</span>
                     </div>
