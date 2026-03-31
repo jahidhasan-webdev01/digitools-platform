@@ -14,7 +14,7 @@ const Tools = ({ toolsPromise, cart, addToCart, removeFromCart, handleProceedToC
                 subtitle="Choose from our curated collection of premium digital products designed to boost your productivity and creativity."
             />
 
-            <div className="flex justify-center mt-2">
+            <div className="flex justify-center mt-5">
                 <div className="inline-flex border-2 border-gray-200 rounded-full gap-2 p-1 bg-white shadow-2xl">
                     <button
                         onClick={() => setIsCartSelected(false)} className={`

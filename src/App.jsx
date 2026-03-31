@@ -7,6 +7,8 @@ import Tools from './components/Tools/Tools';
 import { toast } from 'react-toastify';
 import Steps from './components/Steps/Steps';
 import Pricing from './components/Pricing/Pricing';
+import Join from './components/Join/Join';
+import Footer from './components/Footer/Footer';
 
 const getToolsData = async () => {
   const response = await fetch("/tools.json");
@@ -54,6 +56,8 @@ function App() {
       </div>
 
       <Pricing />
+      <Join />
+      <Footer />
     </>
   )
 }

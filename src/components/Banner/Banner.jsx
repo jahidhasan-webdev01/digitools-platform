@@ -23,11 +23,11 @@ const Banner = () => {
                     software—all in one place. Start creating faster today. <br /> Explore Products
                 </p>
 
-                <div className='flex flex-col sm:flex-row gap-2'>
-                    <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-full w-full sm:w-auto">
+                <div className='flex flex-row gap-2 mb-10 lg:mb-0'>
+                    <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-full">
                         Explore Products
                     </button>
-                    <button className="btn border border-[#9514fa] text-[#4f39f6] rounded-full font-semibold hover:bg-linear-to-r from-[#4f39f6] to-[#9514fa] hover:text-white w-full sm:w-auto">
+                    <button className="btn border border-[#9514fa] text-[#4f39f6] rounded-full font-semibold hover:bg-linear-to-r from-[#4f39f6] to-[#9514fa] hover:text-white">
                         <CiPlay1 /> Watch Demo
                     </button>
                 </div>
@@ -37,7 +37,7 @@ const Banner = () => {
                 <img
                     src={bannerImage}
                     alt="Banner"
-                    className="w-full max-w-[500px] h-auto object-contain"
+                    className="w-full max-w-125 h-auto object-contain"
                 />
             </div>
         </div>
