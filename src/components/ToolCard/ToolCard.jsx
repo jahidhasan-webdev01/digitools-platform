@@ -57,7 +57,8 @@ const ToolCard = ({ tool, cart, addToCart }) => {
                 {
                     isAlreadyInCart(tool.id) ?
                         <button
-                            className="mt-5 btn bg-linear-to-r from-green-500 to-green-700 text-white font-bold rounded-full w-full"
+                            disabled
+                            className="mt-5 btn bg-linear-to-r from-green-500 to-green-700 text-white font-bold rounded-full w-full cursor-di"
                         >
                             <CgCheck className="text-white-700 text-4xl" /> Added to cart
                         </button>
