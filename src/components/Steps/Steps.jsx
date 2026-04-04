@@ -28,7 +28,7 @@ const Steps = () => {
 
                 <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5 shadow-2xl">
                     <div className="flex justify-end">
-                        <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">01</span>
+                        <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">02</span>
                     </div>
                     <div className="flex flex-col justify-center items-center space-y-2 py-10">
                         <div className="bg-purple-100 rounded-full p-5 border border-purple-200">
@@ -41,7 +41,7 @@ const Steps = () => {
 
                 <div className="bg-white hover:bg-purple-50 rounded-2xl border border-gray-200 px-10 py-5 shadow-2xl">
                     <div className="flex justify-end">
-                        <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">01</span>
+                        <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full p-2 font-bold text-sm text-white">03</span>
                     </div>
                     <div className="flex flex-col justify-center items-center space-y-2 py-10">
                         <div className="bg-purple-100 rounded-full p-5 border border-purple-200">
